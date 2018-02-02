@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>{% block title %}All On-loan Books{% endblock %}</h1>
+
+    {% if bookinstance_list %}
+
+    <table>
+      <tr class="{% if bookinst.is_overdue %}overdue{% endif %}">
+          <th>Title</th>
+          <th>Borrower</th>
+          <th>Due Back</th>
+      </tr>
+      {% for bookinst in bookinstance_list %}
+          <tr class="{% if bookinst.is_overdue %}overdue{% endif %}">
+              <td><a href="{% url 'book-detail' bookinst.book.pk %}">{{bookinst.book.title}}</a></td>
+              <td>{{ bookinst.borrower }}</td>
+              <td>{{ bookinst.due_back }}</td>
+          </tr>
+      {% endfor %}
+    </table>
+
+    {% else %}
+      <p>There are no books on loan.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,49 @@
+.sidebar-nav {
+    margin-top: 20px;
+    /* padding: 0; */
+    list-style: none;
+    background-color: lightgray;
+    border: 1px solid black;
+    font-size: .75em;
+    padding: 3px;
+}
+
+td, th {
+  padding: 5px;
+  border: 3px solid grey;
+}
+
+td.rightjust {
+  text-align: right;
+}
+
+.indent {
+  margin: 10px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+body {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+div.sadly {
+    color: red;
+    background-color: lightgoldenrodyellow;
+    border: 5px double red;
+    padding: 5px;
+}
+
+.overdue {
+    color: red;
+    font-style: italic;
+    background-color: yellow;
+}
+
+li.overdue {
+    font-size: 1.25em;
+}
+

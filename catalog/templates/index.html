@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>{% block title %}Local Library Home{% endblock %}</h1>
+
+  <p>Welcome to <em>LocalLibrary</em>,
+      {% if user.is_authenticated %}
+      {{  user.get_username }}.
+      {%  else %}
+          guest.
+      {%  endif %}
+
+      This is a very basic Django website developed as a tutorial example on the Mozilla Developer Network.</p>
+
+    <p>You have visited this site {{ num_visits }} times.</p>
+
+    <p style="color: blue; font-size: .8em">John Pfuntner went through the tutorial using Django 2.0.2, following <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django">a Mozilla tutorial called <span class="italic">Django Web Framework (Python)</span></a></a></p>
+
+<h2>Library Summary</h2>
+
+  <p>The library has the following record counts:</p>
+  <table class="indent">
+    <tr><th>Books</th><td class="rightjust">{{ num_books }}</td></tr>
+    <tr><th>Total copies</th><td class="rightjust">{{ num_instances }}</td></tr>
+    <tr><th>Copies available for loan</th><td class="rightjust">{{ num_instances_available }}</td></tr>
+    <tr><th>Authors</th><td class="rightjust">{{ num_authors }}</td></tr>
+  </table>
+
+{% endblock %}
