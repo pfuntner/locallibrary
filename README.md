@@ -10,7 +10,7 @@ While learing about Django, I was told about [Django Web Framework (Python)](htt
   * Migrate the files I was changing from the tutorial into the PyCharm project
   * I had to do some housekeeping with Django data migration and creating a superuser but that was pretty easy
   * I also lost all of the data in my _database_ but it there wasn't a lot and it gave me a chance to re-do it in my strange style - instead of creating books and authors in the database, I was creating music albums and artists
-  * Moving forward, I was enjoying using PyCharm to carry out the tutorial.  I didn't have use the nasty Windows command prompt and could just move between three windows:
+  * Moving forward, I was enjoying using PyCharm to carry out the tutorial.  I didn't have to use the nasty Windows command prompt and could just move between three windows:
     * The tutorial pages
     * PyCharm
     * My browser that was visiting the Django site I was creating
