@@ -37,6 +37,14 @@ div.sadly {
     padding: 5px;
 }
 
+div.berate {
+    color: red;
+    background-color: lightgoldenrodyellow;
+    border: 5px double red;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
 .overdue {
     color: red;
     font-style: italic;

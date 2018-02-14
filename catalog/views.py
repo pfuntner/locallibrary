@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from .models import Book, Author, BookInstance, Genre
 from django.views import generic
@@ -71,7 +71,7 @@ def isLibrarian(user):
     group = Group.objects.get(name='Librarians')
     return group and (group in user.groups.all())
 
-# @user_passes_test(isLibrarian)
+
 class AllOnLoanListView(LoginRequiredMixin, generic.ListView):
     """
     Allow librarians (staff members) to see:
@@ -82,5 +82,17 @@ class AllOnLoanListView(LoginRequiredMixin, generic.ListView):
     template_name = 'catalog/all_onloan_books.html'
     paginate_by = 10
 
+    def get(self, *args, **kwargs):
+        if not isLibrarian(self.request.user):
+            return redirect("denied")
+        else:
+            return super(AllOnLoanListView, self).get(*args, **kwargs)
+
     def get_queryset(self):
         return BookInstance.objects.filter(status__exact='o').order_by('due_back')
+
+def denied(request):
+
+    return render(
+        request,
+        'denied.html')
