@@ -5,7 +5,7 @@ While learing about Django, I was told about [Django Web Framework (Python)](htt
 * This made a lot of sense to me and had a good pace for an experienced developer.
 * I was performing the steps on my Windows while starting a new job that involves Django.
 * I prefer using Cygwin as my Windows shell but was having trouble getting it work so with the steps so I settled on using the Windows command prompt at the start.  I really hate that command prompt but I could carry out the steps.
-* I had also installed [PyCharm](https://www.jetbrains.com/pycharm/) but was having trouble with Django tutorials using that.  But a point in the Mozilla tutorial, I felt comfortable enough to:
+* I had also installed [PyCharm](https://www.jetbrains.com/pycharm/) but was having trouble with Django tutorials using that.  But at a point in the Mozilla tutorial, I felt comfortable enough to:
   * Create an empty PyCharm Django project
   * Migrate the files I was changing from the tutorial into the PyCharm project
   * I had to do some housekeeping with Django data migration and creating a superuser but that was pretty easy
@@ -14,12 +14,14 @@ While learing about Django, I was told about [Django Web Framework (Python)](htt
     * The tutorial pages
     * PyCharm
     * My browser that was visiting the Django site I was creating
+    
+    I'm using PyCharm with some work related to my job so this was a way to become more comfortable with the IDE.
 
   I imagine you could do something similar to get my stuff working for you if you like.
   
 ## Things to do
 * Do more with the tutorial
-* Finish the challenge of creating the list view for librarians use only
+* ~~Finish the challenge of creating the list view for librarians use only~~
 * Figure out what _virtual envivronment_ does for me - I have no idea!
 
 ## Official Repo
