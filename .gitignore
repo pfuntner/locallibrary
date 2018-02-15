@@ -5,3 +5,4 @@ db.sqlite3
 venv/
 static/*
 locallibrary/settings.py.new
+locallibrary/settings.py.old
