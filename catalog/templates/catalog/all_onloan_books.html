@@ -10,12 +10,14 @@
           <th>Title</th>
           <th>Borrower</th>
           <th>Due Back</th>
+          <th>Renew</th>
       </tr>
       {% for bookinst in bookinstance_list %}
           <tr class="{% if bookinst.is_overdue %}overdue{% endif %}">
               <td><a href="{% url 'book-detail' bookinst.book.pk %}">{{bookinst.book.title}}</a></td>
               <td>{{ bookinst.borrower }}</td>
               <td>{{ bookinst.due_back }}</td>
+              <td> <a href="{% url 'renew-book-librarian' bookinst.id %}">Renew</a></td>
           </tr>
       {% endfor %}
     </table>
