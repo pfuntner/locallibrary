@@ -1,8 +1,8 @@
 # locallibrary - Going through Mozilla tutorial for Django
 
-While learing about Django, I was told about [Django Web Framework (Python)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django).
+While learing about Django, I was told about a tutorial for Django: [Django Web Framework (Python)](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django).
 
-* This made a lot of sense to me and had a good pace for an experienced developer.
+* The tutorial made a lot of sense to me and had a good pace for an experienced developer.  It had some challenges where it didn't spell out the solution and I was also able to add my own crazy twists to things and see how Django worked.  They would sometimes mention additional features that weren't specifically used but I tried them out.
 * I was performing the steps on my Windows while starting a new job that involves Django.
 * I prefer using Cygwin as my Windows shell but was having trouble getting it work so with the steps so I settled on using the Windows command prompt at the start.  I really hate that command prompt but I could carry out the steps.
 * I had also installed [PyCharm](https://www.jetbrains.com/pycharm/) but was having trouble with Django tutorials using that.  But at a point in the Mozilla tutorial, I felt comfortable enough to:
@@ -23,6 +23,7 @@ While learing about Django, I was told about [Django Web Framework (Python)](htt
 * Do more with the tutorial
 * ~~Finish the challenge of creating the list view for librarians use only~~
 * Figure out what _virtual envivronment_ does for me - I have no idea!
+  * Using PyCharm hides a lot of the mystery and it seems transparent - I can't even tell if it's doing anything for me!
 
 ## Official Repo
 There is an [official repository with a final working version of the tutorial](https://github.com/mdn/django-locallibrary-tutorial) - I think it carried out all the _challenges_ too.  They mention it occasionally throughout the tutorial but not often enough, in my humble opinion.
