@@ -14,6 +14,10 @@
 
     <p>You have visited this site {{ num_visits }} times.</p>
 
+    {% if user.is_authenticated == False %}
+        <p>If you want your own user so you can login properly, <a href="mailto:{{ adminEmail }}">email our kind administrator</a>.  He's got nothing better to do.  He's just waiting for <span class="bold">your</span> email.</span></p>
+    {%  endif %}
+
     <p style="color: blue; font-size: .8em">John Pfuntner went through the tutorial using Django 2.0.2, following <a href="https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django">a Mozilla tutorial called <span class="italic">Django Web Framework (Python)</span></a></a></p>
 
 <h2>Library Summary</h2>

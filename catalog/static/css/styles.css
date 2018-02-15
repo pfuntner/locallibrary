@@ -66,3 +66,7 @@ div.content {
     color: red;
     font-style: italic;
 }
+
+.bold {
+    font-weight: bold;
+}

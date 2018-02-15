@@ -4,7 +4,7 @@ from .models import Book, Author, BookInstance, Genre
 from django.views import generic
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import user_passes_test
-from django.contrib.auth.models import Group
+from django.contrib.auth.models import Group, User
 
 from django.http import HttpResponseRedirect
 from django.urls import reverse
@@ -40,11 +40,12 @@ def index(request):
         request,
         'index.html',
         context={
-            'num_books':num_books,
-            'num_instances':num_instances,
-            'num_instances_available':num_instances_available,
-            'num_authors':num_authors,
+            'num_books': num_books,
+            'num_instances': num_instances,
+            'num_instances_available': num_instances_available,
+            'num_authors': num_authors,
             'num_visits': num_visits,
+            'adminEmail': User.objects.get(username="admin").email,
             # 'user': user,
         },
     )
