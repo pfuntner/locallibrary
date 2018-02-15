@@ -3,4 +3,3 @@
 .idea/*
 db.sqlite3
 venv/
-catalog/migrations/*
